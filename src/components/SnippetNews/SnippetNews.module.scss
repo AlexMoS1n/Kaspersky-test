@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.news_block {
+  margin: 15px auto;
+  max-width: 1200px;
+  background-color: black;
+  color: #616a7f;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: 15px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 14px;
+
+  .statistics {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+    .statistics__traffic {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 10px;
+    }
+
+    .statistics__sent {
+      display: flex;
+      gap: 10px;
+      margin-left: auto;
+
+      .statistics__sent__reaction {
+        border-radius: 3px;
+        padding-inline: 9px;
+        color: black;
+      }
+
+      .statistics__sent__reaction_negative {
+        background-color: red;
+      }
+
+      .statistics__sent__reaction_positive {
+        background-color: green;
+      }
+
+      .statistics__sent__info {
+        display: block;
+        padding-inline: 10px;
+        border: 2px solid currentColor;
+        font-weight: bold;
+      }
+
+      .statistics__sent__window {
+        display: block;
+        inline-size: 23px;
+        border: 2px solid currentColor;
+      }
+    }
+  }
+
+  .title {
+    margin: 10px 0 2px 0;
+    font-size: 22px;
+    text-align: left;
+    color: #046cc4;
+  }
+
+  .info {
+    display: flex;
+    gap: 20px;
+    margin-block-end: 20px;
+
+    .info__item {
+      display: flex;
+      gap: 5px;
+
+      img {
+        width: auto;
+        height: 14px;
+      }
+
+      a {
+        color: #046cc4;
+        border-bottom: 1px dashed currentColor;
+      }
+
+      span::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 20px;
+    
+    .about_short {
+      text-align: left;
+      color: #b0afbd;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 3;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .about_full {
+      text-align: left;
+      color: #b0afbd;
+      display: block;
+    }
+  }
+
+  .tags {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-block-end: 20px;
+
+    .tag {
+      padding-inline: 8px;
+      padding-block: 2px;
+      border: 1px solid currentColor;
+      border-radius: 45px;
+      font-weight: bold;
+    }
+  }
+
+  .source {
+    display: flex;
+    margin-block-end: 20px;
+
+    .original_url {
+      padding-inline: 8px;
+      padding-block: 8px;
+      color: #046cc4;
+      border-radius: 10px;
+      background-color: #312e3c;
+    }
+  }
+
+  .control_news_blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 10px;
+  }
+
+  .viewDuplicatesLink {
+    display: block;
+    padding-block: 6px;
+    border-radius: 6px;
+    width: 100%;
+    background-color: transparent;
+    color: #b0afbd;
+    border: 1px solid currentColor;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+
+.wrapper_image {
+  padding-block-start: 2px;
+}
+
+.textImportant {
+  color: #b0afbd;
+}
+
+.linkMoreLess {
+  background-color: transparent;
+  color: #046cc4 !important;
+  text-align: left;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+.linkMoreLess:hover,
+.linkMoreLess:active,
+.linkMoreLess:focus {
+  color: #046cc4;
+  outline: none;
+  cursor: pointer;
+}
+
+.sortLink {
+  color: #616a7f;
+  background-color: transparent;
+  text-align: left;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+.linkMoreLess:hover,
+.linkMoreLess:active,
+.linkMoreLess:focus {
+  color: #616a7f;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrowMoreLessText {
+  filter: invert(26%) sepia(49%) saturate(2732%) hue-rotate(190deg) brightness(105%) contrast(97%);;
+ }
+
+ .arrowSortNews {
+  filter: invert(100%) sepia(22%) saturate(3420%) hue-rotate(180deg) brightness(84%) contrast(70%)
+}
