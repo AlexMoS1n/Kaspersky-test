@@ -137,8 +137,6 @@ export interface IData_TrafficItem {
 }
 ```
 Использовать инструментарий: Javascript/Typescript, CSS/SCSS, React, Ant Design.
-Приветствуется компактный, но при этом читабельный код.
+Приветствуется компактный, но при этом читабельный код.  
  
-
-
-
+![Макет задания](https://github.com/AlexMoS1n/Kaspersky-test/blob/main/src/assets/test.png)
